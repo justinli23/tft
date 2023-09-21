@@ -1,0 +1,100 @@
+CREATE TABLE champions_midset (
+    id serial primary key,
+    name varchar(32) UNIQUE,
+    cost int,
+    type_id int references champion_types(id)
+);
+
+INSERT INTO champions_midset (
+    name,
+    cost,
+    type_id
+)
+VALUES
+    ('Cassiopeia', 1, 6),
+    ('Cho''Gath', 1, 9),
+    ('Irelia', 1, 9),
+    ('Jhin', 1, 2),
+    ('Kayle', 1, 7),
+    ('Malzahar', 1, 6),
+    ('Milio', 1, 6),
+    ('Orianna', 1, 6),
+    ('Poppy', 1, 9),
+    ('Renekton', 1, 9),
+    ('Samira', 1, 2),
+    ('Graves', 1, 3),
+    ('Illaoi', 1, 9);
+
+INSERT INTO champions_midset (
+    name,
+    cost,
+    type_id
+)
+VALUES
+    ('Ashe', 2, 2),
+    ('Galio', 2, 9),
+    ('Jinx', 2, 2),
+    ('Kassadin', 2, 9),
+    ('Naafiri', 2, 3),
+    ('Sett', 2, 9),
+    ('Soraka', 2, 6),
+    ('Swain', 2, 6),
+    ('Taliyah', 2, 6),
+    ('Twisted Fate', 2, 6),
+    ('Vi', 2, 4),
+    ('Warwick', 2, 4),
+    ('Qiyana', 2, 5);
+
+INSERT INTO champions_midset (
+    name,
+    cost,
+    type_id
+)
+VALUES
+    ('Quinn', 3, 1),
+    ('Darius', 3, 3),
+    ('Ekko', 3, 10),
+    ('Nautilus', 3, 9),
+    ('Jayce', 3, 1),
+    ('Miss Fortune', 3, 6),
+    ('Karma', 3, 6),
+    ('Katarina', 3, 10),
+    ('Neeko', 3, 9),
+    ('Rek''Sai', 3, 3),
+    ('Sona', 3, 6),
+    ('Taric', 3, 9),
+    ('Vel''Koz', 3, 1);
+
+INSERT INTO champions_midset (
+    name,
+    cost,
+    type_id
+)
+VALUES
+    ('Aphelios', 4, 2),
+    ('Azir', 4, 7),
+    ('Fiora', 4, 3),
+    ('Jarvan IV', 4, 9),
+    ('Kai''Sa', 4, 7),
+    ('Mordekaiser', 4, 7),
+    ('Nasus', 4, 4),
+    ('Sejuani', 4, 9),
+    ('Shen', 4, 9),
+    ('Nilah', 4, 3),
+    ('Silco', 4, 6),
+    ('Xayah', 4, 2);
+
+INSERT INTO champions_midset (
+    name,
+    cost,
+    type_id
+)
+VALUES
+    ('Aatrox', 5, 3),
+    ('Ahri', 5, 6),
+    ('Bel''Veth', 5, 3),
+    ('Heimerdinger', 5, 6),
+    ('K''Sante', 5, 4),
+    ('Ryze', 5, 6),
+    ('Gangplank', 5, 6),
+    ('Sion', 5, 4);

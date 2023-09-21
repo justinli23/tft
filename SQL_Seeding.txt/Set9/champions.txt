@@ -1,0 +1,100 @@
+CREATE TABLE champions (
+    id serial primary key,
+    name varchar(32) UNIQUE,
+    cost int,
+    type_id int references champion_types(id)
+);
+
+INSERT INTO champions (
+    name,
+    cost,
+    type_id
+)
+VALUES
+    ('Cassiopeia', 1, 6),
+    ('Cho''Gath', 1, 9),
+    ('Irelia', 1, 9),
+    ('Jhin', 1, 2),
+    ('Kayle', 1, 7),
+    ('Malzahar', 1, 6),
+    ('Maokai', 1, 9),
+    ('Orianna', 1, 6),
+    ('Poppy', 1, 9),
+    ('Renekton', 1, 9),
+    ('Samira', 1, 2),
+    ('Tristana', 1, 2),
+    ('Viego', 1, 10);
+
+INSERT INTO champions (
+    name,
+    cost,
+    type_id
+)
+VALUES
+    ('Ashe', 2, 2),
+    ('Galio', 2, 9),
+    ('Jinx', 2, 2),
+    ('Kassadin', 2, 9),
+    ('Kled', 2, 3),
+    ('Sett', 2, 9),
+    ('Soraka', 2, 6),
+    ('Swain', 2, 6),
+    ('Taliyah', 2, 6),
+    ('Teemo', 2, 6),
+    ('Vi', 2, 4),
+    ('Warwick', 2, 4),
+    ('Zed', 2, 5);
+
+INSERT INTO champions (
+    name,
+    cost,
+    type_id
+)
+VALUES
+    ('Akshan', 3, 2),
+    ('Darius', 3, 3),
+    ('Ekko', 3, 10),
+    ('Garen', 3, 3),
+    ('Jayce', 3, 1),
+    ('Kalista', 3, 7),
+    ('Karma', 3, 6),
+    ('Katarina', 3, 10),
+    ('Lissandra', 3, 6),
+    ('Rek''Sai', 3, 3),
+    ('Sona', 3, 6),
+    ('Taric', 3, 9),
+    ('Vel''Koz', 3, 1);
+
+INSERT INTO champions (
+    name,
+    cost,
+    type_id
+)
+VALUES
+    ('Aphelios', 4, 2),
+    ('Azir', 4, 7),
+    ('Gwen', 4, 8),
+    ('Jarvan IV', 4, 9),
+    ('Kai''Sa', 4, 7),
+    ('Lux', 4, 6),
+    ('Nasus', 4, 4),
+    ('Sejuani', 4, 9),
+    ('Shen', 4, 9),
+    ('Urgot', 4, 3),
+    ('Yasuo', 4, 3),
+    ('Zeri', 4, 2);
+
+INSERT INTO champions (
+    name,
+    cost,
+    type_id
+)
+VALUES
+    ('Aatrox', 5, 3),
+    ('Ahri', 5, 6),
+    ('Bel''Veth', 5, 3),
+    ('Heimerdinger', 5, 6),
+    ('K''Sante', 5, 4),
+    ('Ryze', 5, 6),
+    ('Senna', 5, 1),
+    ('Sion', 5, 4);

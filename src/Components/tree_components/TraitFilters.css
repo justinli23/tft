@@ -1,0 +1,10 @@
+.trait-filters {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+  font-size: 12px;
+  /* height: 30%; */
+  overflow-y: scroll;
+  align-items: stretch;
+  justify-content: space-evenly;
+}

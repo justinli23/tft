@@ -1,0 +1,29 @@
+.active-filters-container {
+  display: flex;
+  flex-direction: column;
+  /* font-size: 16px; */
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.active-filters {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+
+.selectedTrait {
+  margin: 2px;
+  border: 1px solid white;
+  padding: 2px 8px 2px;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+}
+
+.clear {
+  width: 40%;
+  margin-bottom: 10px;
+}

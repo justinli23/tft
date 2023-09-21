@@ -1,0 +1,18 @@
+CREATE TABLE champion_types (
+    id serial primary key,
+    damage varchar(32),
+    role varchar(32)
+);
+
+INSERT INTO champion_types (damage, role)
+VALUES
+('Attack', 'Caster'),
+('Attack', 'Carry'),
+('Attack', 'Fighter'),
+('Attack', 'Tank'),
+('Attack', 'Reaper'),
+('Magic', 'Caster'),
+('Magic', 'Carry'),
+('Magic', 'Fighter'),
+('Magic', 'Tank'),
+('Magic', 'Reaper');

@@ -1,0 +1,12 @@
+.trait-selector {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+}
+
+.form {
+  font-size: 12px;
+  margin: auto;
+  padding: 5px 5px;
+}

@@ -1,0 +1,73 @@
+.champhex {
+  display: flex;
+  flex-direction: column;
+  background-color: hsla(187, 62%, 45%, 0.188);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for text items in the hex*/
+.champion-traits {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 4px;
+}
+#champ-name {
+  font-size: 16px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.champhex {
+  font-size: 12px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding: 0px 5px 0px;
+}
+
+/* Clipping to make champhex div hexagonal */
+.champhex {
+  width: 100px;
+  height: 115px;
+  /*height * 0.866 = width */
+  box-sizing: border-box;
+  clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+}
+
+/* Hexagonal wrapper for selected traits */
+.hexwrapper {
+  box-sizing: border-box;
+  clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Wrapper Size based on Selected or Not*/
+/*height * 0.866 = width */
+.selected {
+  width: 110px;
+  height: 128px;
+}
+.unselected {
+  width: 105px;
+  height: 122px;
+}
+
+/*These affect the hexwrapper, not the hex */
+.none-selected {
+  background-color: gray;
+}
+
+.origin-selected {
+  background-color: aqua;
+}
+
+.class-selected {
+  background-color: teal;
+}
+
+.multiple-selected {
+  background: yellow;
+}
+/**/

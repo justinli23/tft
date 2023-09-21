@@ -1,0 +1,51 @@
+CREATE TABLE traits_midset (
+    id serial primary key,
+    name varchar(32) UNIQUE
+);
+
+INSERT INTO traits_midset (name)
+VALUES
+('Ionia'),
+('Targon'),
+('Zaun'),
+('Freljord'),
+('Bilgewater'),
+('Noxus'),
+('Piltover'),
+('Demacia'),
+('Shurima'),
+('Void'),
+('Darkin'),
+('Ixtal'),
+('Gunner'),
+('Juggernaut'),
+('Challenger'),
+('Vanquisher'),
+('Bruiser'),
+('Strategist'),
+('Technogenius'),
+('Multicaster'),
+('Invoker'),
+('Bastion'),
+('Rogue'),
+('Slayer'),
+('Sorcerer'),
+('Reaver King'),
+('Empress'),
+('Wanderer');
+
+ALTER TABLE traits_midset
+ADD COLUMN class bool;
+
+UPDATE traits_midset
+SET class = True
+WHERE id >= 13 and id <= 28;
+
+ALTER TABLE traits_midset
+ADD COLUMN legendary boolean;
+
+UPDATE traits_midset
+SET legendary = True
+WHERE id=19 OR id >=26 AND id <=28;
+
+

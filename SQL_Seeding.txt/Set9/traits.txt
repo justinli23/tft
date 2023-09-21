@@ -1,0 +1,51 @@
+CREATE TABLE traits (
+    id serial primary key,
+    name varchar(32) UNIQUE
+);
+
+INSERT INTO traits (name)
+VALUES
+('Ionia'),
+('Targon'),
+('Zaun'),
+('Freljord'),
+('Shadow Isles'),
+('Noxus'),
+('Piltover'),
+('Demacia'),
+('Shurima'),
+('Void'),
+('Darkin'),
+('Yordle'),
+('Gunner'),
+('Juggernaut'),
+('Challenger'),
+('Deadeye'),
+('Bruiser'),
+('Strategist'),
+('Technogenius'),
+('Multicaster'),
+('Invoker'),
+('Bastion'),
+('Rogue'),
+('Slayer'),
+('Sorcerer'),
+('Redeemer'),
+('Empress'),
+('Wanderer');
+
+ALTER TABLE traits
+ADD COLUMN class bool;
+
+UPDATE traits
+SET class = True
+WHERE id >= 13 AND id <=27;
+
+ALTER TABLE traits
+ADD COLUMN legendary boolean;
+
+UPDATE traits
+SET legendary = True
+WHERE id=11 OR id=19 OR id >=26 AND id <=28
+
+

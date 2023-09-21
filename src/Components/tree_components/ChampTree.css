@@ -1,0 +1,12 @@
+.champ-tree {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: flex-start;
+}
